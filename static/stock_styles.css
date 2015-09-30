@@ -1,0 +1,23 @@
+body { background-color: PaleGoldenRod;   font-family: arial;    }
+h1 {        background-color: Blue;    border: 1px solid;    color:#39F;    text-align: center;    }
+h2 {background-color: Aqua; font-family: Times New Roman; color:#59F ; text-align:center; width: 65 px; } 
+table {    background-color: #F60;    border: 1px solid #39F;    width: 100%;    }
+td {    border: 1px solid;    text-align: center;    }
+p {    color:#09F;    text-indent: 20px;        }
+
+data.dataframe, .dataframe td {
+	  border: none;
+	  border-bottom: 1px solid #C8C8C8;
+	  border-collapse: collapse;
+	  text-align:Left;
+	  padding: 5px;
+	  margin-bottom: 40px;
+	  font-size: 0.9em;
+	}
+
+.dataframe th {
+    background-color: Gold;
+    color: Blue;
+}
+
+

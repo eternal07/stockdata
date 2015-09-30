@@ -1,0 +1,46 @@
+<html>
+
+	<head>
+	<link rel="stylesheet" href={{ url_for('static', filename= "stock_styles.css") }} type="text/css" />
+			<title> STOCK DATA </title>
+	</head>
+	<body>
+	        <h1 align = center> STOCK REPORT </h1>
+	        <form id = "exchange">
+			Please Choose your stock exchange: 
+			 <select form = "exchange" name = "stockexchange">
+		        <option value="NYSE">NYSE</option>
+		        <option value="NASDAQ">NASDAQ</option>
+		     </select>
+			</form>
+	       
+	      
+			<form  align = center>
+			
+			Please Enter your stock ticker: <input type="text" name="stockticker"> 
+			Please Enter time period (in years): <input type="text" name="years"> 
+			<input type = "Submit" value = "Submit">
+			</form>
+			
+			<form align = center>
+
+			</form>			
+											
+			{% block content %}  
+			<h2> TICKER : {{stockticker}}. TIME : {{years}} years</h2>
+			
+			    	{{data | safe}}
+			 
+			{% endblock %}  	 
+			    	 
+			    	 
+			    	
+			    	
+			    
+			    
+	
+				
+				
+			
+	</body>
+</html>
